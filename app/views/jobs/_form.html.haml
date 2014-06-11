@@ -1,0 +1,6 @@
+.row
+  .col-sm-8
+    = form_for record, role: "form" do |f|
+      .form-group
+        = f.label :command
+        = f.select :command, options_for_select(Job::COMMANDS), {}, class: "form-control"
