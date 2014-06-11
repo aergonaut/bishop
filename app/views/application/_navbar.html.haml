@@ -1,0 +1,11 @@
+%nav.navbar.navbar-default{role: "navigation"}
+  .container-fluid
+    .navbar-header
+      = link_to "Bishop", root_path, class: "navbar-brand"
+    
+    #bishop-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li= link_to "Jobs", jobs_path
+      
+      %ul.nav.navbar-nav.navbar-right
+        %li= link_to "Log in", new_session_path
